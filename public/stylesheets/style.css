@@ -1,0 +1,51 @@
+body {
+  min-height: 1000px;
+  padding-top: 70px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color:  #333333;
+    color: white;
+
+}
+.panel > .panel-footer {
+    background-image: none;
+    background-color:  #333333;
+    color: white;
+
+}
+
+.fixed-panel {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #333333;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

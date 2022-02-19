@@ -1,0 +1,61 @@
+<!-- the consent page wich the Participant should fill before he starting the Tasks-->
+<div class="container">
+<div  style="background-color:#5eb5f2;">
+  <h1 style='text-align: center'>Welcome Participant X </h1>
+  <h2 style='text-align: center'>Thank you for your interest in taking part in this research</h2>
+  <br>
+  <p style='text-align: center'>You can go back to the Information Page by clicking the 'Back' button below</p>
+  <p style='text-align: center'>Please confirm the following</p>
+</div>
+ <div class="container">
+     <div class="row">
+        <div class="col-md-9 col-md-offset-1 text-left"><br>
+          <!-- checkbox form must be filled by the subject -->
+             <form data-toggle="validator" role="form" id="ConsentForm" action="/Registration">
+                       <div class="form-group"><br>
+                           <div class="checkbox">
+                               <label>
+                               <input type="checkbox" id="terms" data-error="Please tick all the boxes." required>
+                               I have read the information page and I consent to take part in this study.
+                               </label>
+                               <div class="help-block with-errors">
+                           </div>
+                           <div class="checkbox">
+                               <label>
+                                 <input type="checkbox" id="terms" data-error="Please tick all the boxes." required>
+                                   I understand that anonymous data that cannot be traced back to me individually may be used in academic publications and shared in accordance with open science guidelines and I consent to this.
+                               </label>
+                               <div class="help-block with-errors"></div>
+                           </div>
+                           <div class="checkbox">
+                               <label>
+                                 <input type="checkbox" id="terms" data-error="Please tick all the boxes." required>
+                                I understand that the legal basis for processing any personal information about me is my consent.
+                               </label>
+                               <div class="help-block with-errors"></div>
+                           </div>
+                           <div class="checkbox">
+                               <label>
+                                 <input type="checkbox" id="terms" data-error="Please tick all the boxes." required>
+                              I understand that I can withdraw at any time from the study by closing my browser window but that it will be difficult or impossible to withdraw my data once the task has been submitted.
+                               </label>
+                               <div class="help-block with-errors"></div>
+                           </div>
+                           <div class="checkbox">
+                               <label>
+                                 <input type="checkbox" id="terms" data-error="Please tick all the boxes." required>
+                                 I am over 18 years of age.
+                               </label>
+                               <div class="help-block with-errors"></div>
+                           </div>
+                       </div>
+             </div>
+             <!-- submit and back buttons -->
+             <div class="col-12" style="text-align: center">
+             <a href="/" class="btn btn-primary btn-lg" type="button" id="ToInformation">Back</a>
+             <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+             </div>
+             </form>
+        </div>
+    </div>
+</div>

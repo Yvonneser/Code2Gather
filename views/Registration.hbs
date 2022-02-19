@@ -1,0 +1,109 @@
+<div class="container">
+<form class="col-md-12" method="post" data-toggle="validator" role="form">
+  <br>
+  <div class="form-group">
+  <div class="col-md-12 ">
+    <fieldset disabled>
+    <div class="row">
+      <label for="inputparticipantid" class="form-label">Your participant ID (auto generated)</label>
+      <input type="text" name="UserId" class="form-control" id="inputparticipantid" placeholder= {{user.salt}} >
+    </div>
+    </div>
+    </fieldset>
+    <br>
+    <div class="row g-2">
+      <br>
+       <div class="col-md-6">
+           <label for="inputage" class="form-label" pattern="[0-9]{2}" data-error="Please fill 2 digits.">What is your age ?</label>
+           <input type="age" class="form-control" placeholder="Your Age" aria-label="age required">
+           <div class="help-block with-errors">Maximum 2 digits.</div>
+       </div>
+       <div class="col-md-6">
+         <label for="inputgender" class="form-label">What is your gender ?</label>
+          <div class="form-floating">
+            <select class="form-control col-md-6 " id="floatinggender" aria-label="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+            </select>
+         </div>
+       </div>
+    </div>
+<br>
+    <div class="row g-2">
+      <div class="col-md-6">
+        <label for="inputProgYears" class="form-label">How many years do you have in programming?</label>
+         <div class="form-floating">
+           <select class="form-control col-md-6 " id="floatingProgYears" aria-label="ProgYears">
+           <option value="1">1-2 years of programming</option>
+           <option value="2">3-5 years of programming</option>
+           <option value="3">Above 5 years of programming</option>
+           </select>
+        </div>
+      </div>
+       <div class="col-md-6">
+         <label for="inputCodeLang" class="form-label">What coding language do you prefer the most?</label>
+          <div class="form-floating">
+            <select class="form-control col-md-6 " id="floatingCodeLang" aria-label="CodeLang">
+            <option value="1">Javascript</option>
+            <option value="2">C</option>
+            <option value="3">Java</option>
+            <option value="4">Python</option>
+            </select>
+         </div>
+       </div>
+    </div>
+    <br>
+    <div class="row g-2">
+      <div class="col-md-6">
+        <label for="inputAcadDeg" class="form-label">Which academic degree are you studying towards?</label>
+         <div class="form-floating">
+           <select class="form-control col-md-6 " id="floatingAcadDeg" aria-label="AcadDeg">
+             <option value="1">Bachelor Degree</option>
+             <option value="2">MA Degree</option>
+             <option value="3">Doctorate Degree</option>
+             <option value="4">Postdoctoral Degree</option>
+           </select>
+        </div>
+      </div>
+       <div class="col-md-6">
+         <label for="inputStudYears" class="form-label">How many years have you been a student?</label>
+          <div class="form-floating">
+            <select class="form-control col-md-6 " id="floatingStudYears" aria-label="StudYears">
+            <option value="1">1 year of learning </option>
+            <option value="2">2 years of learning </option>
+            <option value="3">3 years of learning </option>
+            <option value="4">More than 3 years of learning</option>
+            </select>
+         </div>
+       </div>
+    </div>
+
+<br>
+    <div class="row g-2">
+      <div class="col-md-6">
+        <label for="inputCourses" class="form-label">Which formal courses on programming have you taken?</label>
+        <input type="text" class="form-control" placeholder="Python" aria-label="Courses">
+      </div>
+       <div class="col-md-6">
+         <fieldset disabled>
+           <label for="inputparticipantid" class="form-label">Year (No need to fill, generated automatically)</label>
+           <input type="text" class="form-control" id="inputyear" placeholder={{inputyear}}>
+         </div>
+         </fieldset>
+       </div>
+       <br>
+       <br>
+       <div class="col-12" style="text-align: center">
+         <a href="/consent" class="btn btn-primary " type="button" id="ToInformation">Back</a>
+         <a href="/task" class="btn btn-primary ">Registre\Continue</a>
+       </div>
+     </div>
+    </form>
+</div>
+
+
+<script>
+ console.log(new Date().getFullYear());
+document.getElementById("inputyear").innerHTML = new Date().getFullYear();
+</script>
